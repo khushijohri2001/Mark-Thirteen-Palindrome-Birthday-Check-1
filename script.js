@@ -129,7 +129,7 @@ function upcomingDate(date) {
     day: day,
     month : month,
     year : year
-  }
+  };
 
 }
 
@@ -140,11 +140,11 @@ function nextPalindrome(date){
   
   while(1){
     counter++;
-    var palindrome =palindromeCheck(date);
-    if (isPalindrome){
+    var palindrome =palindromeCheck(nextDate);
+    if (palindrome){
       break;
     }
-    nextDate = upcomingDate(date);
+    nextDate = upcomingDate(nextDate);
   }
 
   return [counter, nextDate];
